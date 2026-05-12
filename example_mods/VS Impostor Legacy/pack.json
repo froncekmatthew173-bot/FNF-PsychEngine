@@ -1,0 +1,13 @@
+{
+  "name": "VS Impostor Legacy",
+  "description": "Ported VS Impostor Legacy content for Psych Engine.",
+  "restart": false,
+  "runsGlobally": true,
+  "color": [
+    220,
+    45,
+    45
+  ],
+  "discordRPC": "863222024192262205",
+  "iconFramerate": 10
+}

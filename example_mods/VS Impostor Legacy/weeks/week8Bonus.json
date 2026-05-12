@@ -1,0 +1,35 @@
+{
+  "songs": [
+    [
+      "ROOMCODE",
+      "powers",
+      [
+        80,
+        173,
+        235
+      ],
+      "powers",
+      "Keegan",
+      [
+        "victory"
+      ],
+      0,
+      true
+    ]
+  ],
+  "section": "jams",
+  "storyName": "",
+  "weekBefore": "",
+  "weekName": "Week J (Bonus)",
+  "startUnlocked": false,
+  "hideStoryMode": true,
+  "hideFreeplay": false,
+  "weekCharacters": [
+    "powers",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+  "hiddenUntilUnlocked": false,
+  "difficulties": ""
+}

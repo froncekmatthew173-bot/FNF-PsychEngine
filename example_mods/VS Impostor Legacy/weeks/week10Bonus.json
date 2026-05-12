@@ -1,0 +1,35 @@
+{
+  "songs": [
+    [
+      "Tomongus Tuesday",
+      "tuesday",
+      [
+        255,
+        51,
+        51
+      ],
+      "mech",
+      "emihead",
+      [
+        "chewmate"
+      ],
+      0,
+      true
+    ]
+  ],
+  "section": "tomo",
+  "storyName": "",
+  "weekBefore": "",
+  "weekName": "Tomongus (Bonus)",
+  "startUnlocked": false,
+  "hideStoryMode": true,
+  "hideFreeplay": false,
+  "weekCharacters": [
+    "tuesday",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+  "hiddenUntilUnlocked": false,
+  "difficulties": ""
+}

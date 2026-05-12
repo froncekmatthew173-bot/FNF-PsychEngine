@@ -1,0 +1,34 @@
+{
+  "songs": [
+    [
+      "Dank Bars",
+      "db",
+      [
+        102,
+        255,
+        102
+      ],
+      "db",
+      "EthanTheDoodler"
+    ]
+  ],
+  "section": "db",
+  "storyName": "DANK BARS",
+  "weekBefore": "week2",
+  "weekName": "Dank Bars",
+  "startUnlocked": false,
+  "hideStoryMode": true,
+  "hideFreeplay": false,
+  "node": {
+    "parent": "week2",
+    "direction": "north"
+  },
+  "weekCharacters": [
+    "db",
+    "bf",
+    "gf"
+  ],
+  "weekBackground": "stage",
+  "hiddenUntilUnlocked": false,
+  "difficulties": ""
+}

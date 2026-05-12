@@ -1,0 +1,13 @@
+{
+  "name": "VS Impostor Security DLC",
+  "description": "Ported VS Impostor Security DLC content for Psych Engine.",
+  "restart": false,
+  "runsGlobally": true,
+  "color": [
+    120,
+    60,
+    190
+  ],
+  "discordRPC": "863222024192262205",
+  "iconFramerate": 10
+}
