@@ -1,0 +1,26 @@
+{
+	"directory": "",
+	"defaultZoom": 0.62,
+	"stageUI": "normal",
+	"boyfriend": [770, 230],
+	"girlfriend": [405, 110],
+	"opponent": [95, 185],
+	"hide_girlfriend": false,
+	"camera_boyfriend": [0, -20],
+	"camera_opponent": [20, -35],
+	"camera_girlfriend": [0, 0],
+	"camera_speed": 1,
+	"objects": [
+		{"type": "sprite", "name": "concept", "x": -590, "y": -380, "image": "april/stage_concept", "scale": [0.27, 0.27], "scroll": [0.25, 0.25], "color": "FFFFFF", "alpha": 0.75, "angle": 0, "filters": 3},
+		{"type": "square", "name": "floor", "x": -520, "y": 615, "scale": [2300, 360], "scroll": [1, 1], "color": "16161E", "alpha": 1, "angle": 0, "filters": 3},
+		{"type": "model", "name": "shadowStageModel", "x": -310, "y": -55, "model": "models/april/Shadow_stage.fbx", "preview": "april/models/Shadow_stage_Scene_mat_BaseColor", "scale": [0.08, 0.08], "scroll": [0.72, 0.72], "color": "FFFFFF", "alpha": 0.48, "angle": 0, "filters": 3},
+		{"type": "model", "name": "neptuneModel", "x": 925, "y": -150, "model": "models/april/Neptune_planet.fbx", "preview": "april/2k_neptune", "scale": [0.34, 0.34], "scroll": [0.18, 0.18], "color": "FFFFFF", "alpha": 0.95, "angle": 0, "filters": 3},
+		{"type": "model", "name": "guitarModel", "x": 250, "y": 315, "model": "models/april/Shadow_guittar.fbx", "preview": "april/models/Shadow_guitar_BaseColor", "scale": [0.16, 0.16], "scroll": [0.95, 0.95], "color": "FFFFFF", "alpha": 0.85, "angle": -8, "filters": 3},
+		{"type": "model", "name": "micModel", "x": 990, "y": 305, "model": "models/april/Shadow_Mic.fbx", "preview": "april/models/Shadow_mic_BaseColor", "scale": [0.08, 0.08], "scroll": [0.95, 0.95], "color": "FFFFFF", "alpha": 0.85, "angle": 10, "filters": 3}
+	],
+	"_editorMeta": {
+		"dad": "april-shadow",
+		"boyfriend": "april-bf-3d",
+		"gf": "gf"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"image": "generated:animal",
+	"position": [0, -35],
+	"scale": 0.85,
+	"idle_anim": "idle",
+	"confirm_anim": "confirm",
+	"flipX": false,
+	"antialiasing": true
+}

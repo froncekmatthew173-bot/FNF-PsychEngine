@@ -1,0 +1,78 @@
+
+******** Loading object SkeletalMesh4'Boyfriend.Boyfriend' ********
+
+ERROR: Serializing behind stopper (272C82+4 > 272C85)
+FFileReader::Serialize: File=Boyfriend.uasset <- FArchive::ByteOrderSerialize <- TArray::Serialize: 21628/3364864 <- FSkelMeshSection4<< <- TArray::Serialize: 0/196608 <- FStaticLODModel4<< <- TArray::Serialize: 0/65536 <- USkeletalMesh4::Serialize <- LoadObject: SkeletalMesh4'Boyfriend.Boyfriend', pos=272C82, ver=522/0 (editor), game=ue4.25+ <- UObject::EndLoad <- Main: umodel_build=1590
+
+
+******** Loading object SkeletalMesh4'Boyfriend.Boyfriend' ********
+
+ERROR: Serializing behind stopper (272C82+4 > 272C85)
+FFileReader::Serialize: File=Boyfriend.uasset <- FArchive::ByteOrderSerialize <- TArray::Serialize: 21628/3364864 <- FSkelMeshSection4<< <- TArray::Serialize: 0/196608 <- FStaticLODModel4<< <- TArray::Serialize: 0/65536 <- USkeletalMesh4::Serialize <- LoadObject: SkeletalMesh4'Boyfriend.Boyfriend', pos=272C82, ver=522/0 (editor), game=ue4.25+ <- UObject::EndLoad <- Main: umodel_build=1590
+
+
+******** Loading object SkeletalMesh4'Boyfriend.Boyfriend' ********
+
+ERROR: Serializing behind stopper (272C82+4 > 272C85)
+FFileReader::Serialize: File=Boyfriend.uasset <- FArchive::ByteOrderSerialize <- TArray::Serialize: 21628/3364864 <- FSkelMeshSection4<< <- TArray::Serialize: 0/196608 <- FStaticLODModel4<< <- TArray::Serialize: 0/65536 <- USkeletalMesh4::Serialize <- LoadObject: SkeletalMesh4'Boyfriend.Boyfriend', pos=272C82, ver=522/0 (editor), game=ue4.25+ <- UObject::EndLoad <- Main: umodel_build=1590
+
+
+******** charting/Shadow.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: charting/Shadow.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): charting/Shadow.uasset <- Main: umodel_build=1590
+
+
+******** charting/Shadow.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: charting/Shadow.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): charting/Shadow.uasset <- Main: umodel_build=1590
+
+
+******** charting/Shadow.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: charting/Shadow.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): charting/Shadow.uasset <- Main: umodel_build=1590
+
+
+******** models/Characters/Boyfriend/Boyfriend.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: models/Characters/Boyfriend/Boyfriend.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): models/Characters/Boyfriend/Boyfriend.uasset <- Main: umodel_build=1590
+
+
+******** charting/Shadow.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: charting/Shadow.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): charting/Shadow.uasset <- Main: umodel_build=1590
+
+
+******** models/Characters/Boyfriend/Boyfriend.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: models/Characters/Boyfriend/Boyfriend.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): models/Characters/Boyfriend/Boyfriend.uasset <- Main: umodel_build=1590
+
+
+******** charting/Shadow.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: charting/Shadow.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): charting/Shadow.uasset <- Main: umodel_build=1590
+
+
+******** models/Characters/Boyfriend/Boyfriend.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: models/Characters/Boyfriend/Boyfriend.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): models/Characters/Boyfriend/Boyfriend.uasset <- Main: umodel_build=1590
+
+
+******** charting/Shadow.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: charting/Shadow.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): charting/Shadow.uasset <- Main: umodel_build=1590
+
+
+******** models/Characters/Boyfriend/Boyfriend.uasset ********
+
+ERROR: UE4 LegacyVersion: unsupported value -8
+FPackageFileSummary::Serialize4 <- FPackageFileSummary<<: Ver=0/0 <- UnPackage::UnPackage: models/Characters/Boyfriend/Boyfriend.uasset, ver=100000/0, game=ue4.0 <- UnPackage::LoadPackage(info): models/Characters/Boyfriend/Boyfriend.uasset <- Main: umodel_build=1590
+

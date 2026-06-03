@@ -7,3 +7,5 @@ mallEvil
 school
 schoolEvil
 tank
+shape-stage
+april-shadow-stage

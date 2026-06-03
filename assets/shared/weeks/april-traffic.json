@@ -1,0 +1,19 @@
+{
+	"songs": [
+		["Traffic", "april-shadow", [181, 31, 50]]
+	],
+	"weekCharacters": [
+		"april-shadow",
+		"april-bf-3d",
+		"gf"
+	],
+	"weekBackground": "stage",
+	"storyName": "April Workfiles",
+	"weekBefore": "",
+	"weekName": "April Traffic",
+	"startUnlocked": true,
+	"hiddenUntilUnlocked": false,
+	"hideStoryMode": false,
+	"hideFreeplay": false,
+	"difficulties": "Normal, Zavion"
+}

@@ -1,0 +1,18 @@
+{
+	"animations": [
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "idle", "indices": [], "name": "idle"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singLEFT", "indices": [], "name": "singLEFT"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singDOWN", "indices": [], "name": "singDOWN"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singUP", "indices": [], "name": "singUP"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singRIGHT", "indices": [], "name": "singRIGHT"}
+	],
+	"no_antialiasing": false,
+	"image": "generated:april-shadow",
+	"position": [0, 260],
+	"healthicon": "april-shadow",
+	"flip_x": false,
+	"healthbar_colors": [181, 31, 50],
+	"camera_position": [0, 0],
+	"sing_duration": 4,
+	"scale": 1
+}

@@ -156,7 +156,10 @@ class Character extends FlxSprite
 
 		if(!isAnimateAtlas)
 		{
-			frames = Paths.getMultiAtlas(json.image.split(','));
+			if(backend.GeneratedGraphics.isGenerated(json.image))
+				frames = backend.GeneratedGraphics.atlas(json.image);
+			else
+				frames = Paths.getMultiAtlas(json.image.split(','));
 		}
 		#if flxanimate
 		else

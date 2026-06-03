@@ -1,0 +1,19 @@
+{
+	"songs": [
+		["Shape Tutorial", "generated:human", [233, 79, 100]]
+	],
+	"weekCharacters": [
+		"shape-human",
+		"shape-bot",
+		"gf"
+	],
+	"weekBackground": "stage",
+	"storyName": "Generated Shapes",
+	"weekBefore": "",
+	"weekName": "Shape Week",
+	"startUnlocked": true,
+	"hiddenUntilUnlocked": false,
+	"hideStoryMode": false,
+	"hideFreeplay": false,
+	"difficulties": ""
+}

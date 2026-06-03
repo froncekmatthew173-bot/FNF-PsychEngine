@@ -1,0 +1,12 @@
+{
+	"image": "generated:april-shadow",
+	"position": [
+		0,
+		-35
+	],
+	"scale": 1,
+	"idle_anim": "idle",
+	"confirm_anim": "hey",
+	"flipX": false,
+	"antialiasing": true
+}

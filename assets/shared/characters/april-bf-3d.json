@@ -1,0 +1,36 @@
+{
+	"animations": [
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "idle", "indices": [], "name": "idle"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singLEFT", "indices": [], "name": "singLEFT"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singDOWN", "indices": [], "name": "singDOWN"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singUP", "indices": [], "name": "singUP"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singRIGHT", "indices": [], "name": "singRIGHT"},
+		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "hey", "indices": [], "name": "hey"}
+	],
+	"no_antialiasing": false,
+	"image": "generated:april-bf-3d",
+	"position": [0, 340],
+	"healthicon": "generated:april-bf-3d",
+	"flip_x": true,
+	"healthbar_colors": [49, 176, 209],
+	"camera_position": [0, 0],
+	"sing_duration": 4,
+	"scale": 1,
+	"model": "art/friday-night-3d/boyfriend/Boyfriend.uasset",
+	"model_skeleton": "art/friday-night-3d/boyfriend/Boyfriend_Skeleton.uasset",
+	"model_texture": "art/friday-night-3d/boyfriend/textures/Boyfriend_Texture.uasset",
+	"model_texture_preview": "friday-night-3d/models/Characters/Boyfriend/textures/Boyfriend_Texture",
+	"packaged_model": "Friday_Night_3D/Content/models/Characters/Boyfriend/Boyfriend.uasset",
+	"packaged_model_data": "Friday_Night_3D/Content/models/Characters/Boyfriend/Boyfriend.uexp",
+	"packaged_skeleton": "Friday_Night_3D/Content/models/Characters/Boyfriend/Boyfriend_Skeleton.uasset",
+	"packaged_texture": "Friday_Night_3D/Content/models/Characters/Boyfriend/textures/Boyfriend_Texture.uasset",
+	"packaged_texture_data": "Friday_Night_3D/Content/models/Characters/Boyfriend/textures/Boyfriend_Texture.uexp",
+	"packaged_texture_bulk": "Friday_Night_3D/Content/models/Characters/Boyfriend/textures/Boyfriend_Texture.ubulk",
+	"model_animations": {
+		"idle": "art/friday-night-3d/boyfriend/animations/bf_idle.uasset",
+		"singLEFT": "art/friday-night-3d/boyfriend/animations/bf_left.uasset",
+		"singDOWN": "art/friday-night-3d/boyfriend/animations/bf_down.uasset",
+		"singUP": "art/friday-night-3d/boyfriend/animations/bf_up.uasset",
+		"singRIGHT": "art/friday-night-3d/boyfriend/animations/Bf_right.uasset"
+	}
+}

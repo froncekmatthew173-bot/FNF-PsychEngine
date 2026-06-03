@@ -1,0 +1,26 @@
+{
+	"directory": "",
+	"defaultZoom": 0.85,
+	"stageUI": "normal",
+	"boyfriend": [770, 120],
+	"girlfriend": [405, 105],
+	"opponent": [95, 120],
+	"hide_girlfriend": false,
+	"camera_boyfriend": [0, 0],
+	"camera_opponent": [0, 0],
+	"camera_girlfriend": [0, 0],
+	"camera_speed": 1,
+	"objects": [
+		{"type": "square", "name": "sky", "x": -450, "y": -260, "scale": [2200, 760], "scroll": [0.25, 0.25], "color": "5EC8FF", "alpha": 1, "angle": 0, "filters": 3},
+		{"type": "square", "name": "sun", "x": 930, "y": -140, "scale": [150, 150], "scroll": [0.18, 0.18], "color": "FFE66D", "alpha": 1, "angle": 0, "filters": 3},
+		{"type": "square", "name": "backWall", "x": -360, "y": 270, "scale": [1900, 310], "scroll": [0.7, 0.7], "color": "6554AF", "alpha": 1, "angle": 0, "filters": 3},
+		{"type": "square", "name": "floor", "x": -520, "y": 570, "scale": [2300, 360], "scroll": [1, 1], "color": "2F2A48", "alpha": 1, "angle": 0, "filters": 3},
+		{"type": "square", "name": "leftSpeaker", "x": 210, "y": 340, "scale": [95, 150], "scroll": [1, 1], "color": "20222E", "alpha": 1, "angle": 0, "filters": 3},
+		{"type": "square", "name": "rightSpeaker", "x": 1000, "y": 340, "scale": [95, 150], "scroll": [1, 1], "color": "20222E", "alpha": 1, "angle": 0, "filters": 3}
+	],
+	"_editorMeta": {
+		"dad": "shape-human",
+		"boyfriend": "shape-bot",
+		"gf": "gf"
+	}
+}

@@ -547,6 +547,13 @@ class LoadingState extends MusicBeatState
 						if(sprite.type == 'sprite' || sprite.type == 'animatedSprite')
 							if((sprite.filters < 0 || StageData.validateVisibility(sprite.filters)) && !imgs.contains(sprite.image))
 								imgs.push(sprite.image);
+						if(sprite.type == 'model')
+						{
+							var preview:String = sprite.preview;
+							if(preview == null && sprite.texture != null) preview = sprite.texture;
+							if((sprite.filters < 0 || StageData.validateVisibility(sprite.filters)) && preview != null && !imgs.contains(preview))
+								imgs.push(preview);
+						}
 					}
 				}
 				prepare(imgs, snds, mscs);
@@ -562,6 +569,12 @@ class LoadingState extends MusicBeatState
 
 			dontPreloadDefaultVoices = false;
 			preloadCharacter(player1, prefixVocals);
+			if (prefixVocals != null && song.vocalTracks != null && song.vocalTracks.length > 0)
+			{
+				for (track in song.vocalTracks)
+					songsToPrepare.push('$prefixVocals-$track');
+				dontPreloadDefaultVoices = true;
+			}
 			if (!dontPreloadDefaultVoices && prefixVocals != null)
 			{
 				if(Paths.fileExists('$prefixVocals-Player.${Paths.SOUND_EXT}', SOUND, false, 'songs') && Paths.fileExists('$prefixVocals-Opponent.${Paths.SOUND_EXT}', SOUND, false, 'songs'))

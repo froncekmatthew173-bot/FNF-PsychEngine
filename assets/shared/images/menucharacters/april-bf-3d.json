@@ -1,0 +1,12 @@
+{
+	"image": "generated:april-bf-3d",
+	"position": [
+		0,
+		-40
+	],
+	"scale": 1,
+	"idle_anim": "idle",
+	"confirm_anim": "hey",
+	"flipX": true,
+	"antialiasing": true
+}

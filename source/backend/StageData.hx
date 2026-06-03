@@ -146,12 +146,24 @@ class StageData {
 						addedObjects.set('boyfriend', boyfriend);
 					}
 
-				case 'square', 'sprite', 'animatedSprite':
+				case 'square', 'sprite', 'animatedSprite', 'model':
 					if(!ignoreFilters && !validateVisibility(data.filters)) continue;
 
 					var spr:ModchartSprite = new ModchartSprite(data.x, data.y);
 					spr.ID = num;
-					if(data.type != 'square')
+					if(data.type == 'model')
+					{
+						var preview:String = data.preview;
+						if(preview == null && data.texture != null) preview = data.texture;
+
+						if(preview != null && Paths.fileExists('images/$preview.png', IMAGE))
+							spr.loadGraphic(Paths.image(preview));
+						else
+							spr.loadGraphic(GeneratedGraphics.modelProxy(data.name != null ? data.name : data.model));
+
+						spr.antialiasing = ClientPrefs.data.antialiasing;
+					}
+					else if(data.type != 'square')
 					{
 						if(data.type == 'sprite')
 							spr.loadGraphic(Paths.image(data.image));
@@ -193,8 +205,8 @@ class StageData {
 						spr.scale.set(data.scale[0], data.scale[1]);
 						spr.updateHitbox();
 					}
-					spr.scrollFactor.set(data.scroll[0], data.scroll[1]);
-					spr.color = CoolUtil.colorFromString(data.color);
+					if(data.scroll != null) spr.scrollFactor.set(data.scroll[0], data.scroll[1]);
+					if(data.color != null) spr.color = CoolUtil.colorFromString(data.color);
 					
 					for (varName in ['alpha', 'angle'])
 					{

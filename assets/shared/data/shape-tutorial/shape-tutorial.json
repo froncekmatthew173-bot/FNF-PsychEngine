@@ -1,0 +1,20 @@
+{
+	"song": {
+		"song": "Tutorial",
+		"notes": [
+			{"sectionBeats": 4, "sectionNotes": [[0, 0, 0], [600, 1, 0], [1200, 2, 0], [1800, 3, 0]], "mustHitSection": false},
+			{"sectionBeats": 4, "sectionNotes": [[2400, 4, 0], [3000, 5, 0], [3600, 6, 0], [4200, 7, 0]], "mustHitSection": true},
+			{"sectionBeats": 4, "sectionNotes": [[4800, 0, 0], [5400, 2, 0], [6000, 4, 0], [6600, 6, 0]], "mustHitSection": false}
+		],
+		"events": [],
+		"bpm": 100,
+		"needsVoices": false,
+		"speed": 1,
+		"offset": 0,
+		"player1": "shape-bot",
+		"player2": "shape-human",
+		"gfVersion": "gf",
+		"stage": "shape-stage",
+		"format": "psych_v1"
+	}
+}

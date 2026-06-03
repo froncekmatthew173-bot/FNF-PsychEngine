@@ -24,3 +24,13 @@ pico-speaker
 bf-holding-gf
 pico-player
 tankman-player
+shape-human
+shape-bot
+shape-animal
+shape-monster
+shape-object
+april-shadow
+april-zavion
+april-mic
+april-guitar
+april-bf-3d
