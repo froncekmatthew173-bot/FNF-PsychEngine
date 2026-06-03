@@ -1,36 +1,135 @@
 {
 	"animations": [
-		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "idle", "indices": [], "name": "idle"},
-		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singLEFT", "indices": [], "name": "singLEFT"},
-		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singDOWN", "indices": [], "name": "singDOWN"},
-		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singUP", "indices": [], "name": "singUP"},
-		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "singRIGHT", "indices": [], "name": "singRIGHT"},
-		{"offsets": [0, 0], "loop": false, "fps": 24, "anim": "hey", "indices": [], "name": "hey"}
+		{
+			"loop": false,
+			"offsets": [-5, 0],
+			"anim": "idle",
+			"fps": 24,
+			"name": "BF idle dance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [15, -6],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BF NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-16, -49],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BF NOTE DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-26, 25],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BF NOTE UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-38, -7],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BF NOTE RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [11, 26],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "BF NOTE LEFT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-5, -19],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "BF NOTE DOWN MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-26, 27],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "BF NOTE UP MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-31, 22],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "BF NOTE RIGHT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [7, 5],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BF HEY",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [14, 58],
+			"anim": "hurt",
+			"fps": 24,
+			"name": "BF hit",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [-4, 0],
+			"anim": "scared",
+			"fps": 24,
+			"name": "BF idle shaking",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-10, -16],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "boyfriend dodge",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [294, 267],
+			"anim": "attack",
+			"fps": 24,
+			"name": "boyfriend attack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-40, -40],
+			"anim": "pre-attack",
+			"fps": 24,
+			"name": "bf pre attack",
+			"indices": []
+		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "generated:april-bf-3d",
-	"position": [0, 340],
-	"healthicon": "generated:april-bf-3d",
+	"image": "characters/3d/BOYFRIEND",
+	"position": [0, 350],
+	"healthicon": "bf",
 	"flip_x": true,
 	"healthbar_colors": [49, 176, 209],
 	"camera_position": [0, 0],
 	"sing_duration": 4,
 	"scale": 1,
-	"model": "art/friday-night-3d/boyfriend/Boyfriend.uasset",
-	"model_skeleton": "art/friday-night-3d/boyfriend/Boyfriend_Skeleton.uasset",
-	"model_texture": "art/friday-night-3d/boyfriend/textures/Boyfriend_Texture.uasset",
-	"model_texture_preview": "friday-night-3d/models/Characters/Boyfriend/textures/Boyfriend_Texture",
-	"packaged_model": "Friday_Night_3D/Content/models/Characters/Boyfriend/Boyfriend.uasset",
-	"packaged_model_data": "Friday_Night_3D/Content/models/Characters/Boyfriend/Boyfriend.uexp",
-	"packaged_skeleton": "Friday_Night_3D/Content/models/Characters/Boyfriend/Boyfriend_Skeleton.uasset",
-	"packaged_texture": "Friday_Night_3D/Content/models/Characters/Boyfriend/textures/Boyfriend_Texture.uasset",
-	"packaged_texture_data": "Friday_Night_3D/Content/models/Characters/Boyfriend/textures/Boyfriend_Texture.uexp",
-	"packaged_texture_bulk": "Friday_Night_3D/Content/models/Characters/Boyfriend/textures/Boyfriend_Texture.ubulk",
-	"model_animations": {
-		"idle": "art/friday-night-3d/boyfriend/animations/bf_idle.uasset",
-		"singLEFT": "art/friday-night-3d/boyfriend/animations/bf_left.uasset",
-		"singDOWN": "art/friday-night-3d/boyfriend/animations/bf_down.uasset",
-		"singUP": "art/friday-night-3d/boyfriend/animations/bf_up.uasset",
-		"singRIGHT": "art/friday-night-3d/boyfriend/animations/Bf_right.uasset"
-	}
+	"_editor_isPlayer": true
 }

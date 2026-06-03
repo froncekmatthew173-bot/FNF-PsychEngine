@@ -2,6 +2,10 @@ package objects;
 
 import backend.animation.PsychAnimationController;
 
+#if desktop
+import objects.Away3DModel;
+#end
+
 import flixel.util.FlxSort;
 import flixel.util.FlxDestroyUtil;
 
@@ -44,6 +48,14 @@ class Character extends FlxSprite
 	 * In case a character is missing, it will use this on its place
 	**/
 	public static final DEFAULT_CHARACTER:String = 'bf';
+
+	// --- 3D (Away3D) support ---
+	#if desktop
+	public var model3D:Away3DModel = null;
+	public var useModel3D:Bool = false;
+	public var model3DPath:String = '';
+	#end
+
 
 	public var animOffsets:Map<String, Array<Dynamic>>;
 	public var debugMode:Bool = false;
@@ -145,7 +157,32 @@ class Character extends FlxSprite
 	{
 		isAnimateAtlas = false;
 
+		#if desktop
+		// 3D mode: if the character json defines a 3D model, skip 2D atlas loading.
+		if (json.model_3d != null)
+		{
+			useModel3D = true;
+			model3DPath = '' + json.model_3d;
+
+			model3D = new Away3DModel();
+			model3D.loadFBX(model3DPath);
+
+			if (json.model_position != null && json.model_position.length >= 3)
+				model3D.setPosition3D(json.model_position[0], json.model_position[1], json.model_position[2]);
+			if (json.model_rotation != null && json.model_rotation.length >= 3)
+				model3D.setRotation3D(json.model_rotation[0], json.model_rotation[1], json.model_rotation[2]);
+			if (json.model_scale != null && json.model_scale.length >= 3)
+				model3D.setScale3D(json.model_scale[0], json.model_scale[1], json.model_scale[2]);
+
+			// Hide 2D sprite visuals.
+			alpha = 0.00001;
+			visible = true;
+			return;
+		}
+		#end
+
 		#if flxanimate
+
 		var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT);
 		if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind))
 			isAnimateAtlas = true;
@@ -241,7 +278,15 @@ class Character extends FlxSprite
 
 	override function update(elapsed:Float)
 	{
+		#if desktop
+		if(useModel3D) {
+			if(model3D != null) model3D.update(elapsed);
+			return;
+		}
+		#end
+
 		if(isAnimateAtlas) atlas.update(elapsed);
+
 
 		if(debugMode || (!isAnimateAtlas && animation.curAnim == null) || (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null)))
 		{

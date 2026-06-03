@@ -125,6 +125,7 @@ class StageData {
 			switch(data.type)
 			{
 				case 'gf', 'gfGroup':
+
 					if(gf != null)
 					{
 						gf.ID = num; 
