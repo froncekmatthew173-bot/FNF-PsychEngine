@@ -1,0 +1,7 @@
+{
+  "name": "Learn to Type with Boyfriend",
+  "description": "Ported from doggy-dentures/LearnToType (FPS Plus fork) into PsychEngine 1.0.4.",
+  "restart": false,
+  "runsGlobally": false,
+  "color": [120, 180, 240]
+}
