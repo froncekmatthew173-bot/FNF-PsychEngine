@@ -8,6 +8,8 @@ import flixel.util.FlxDestroyUtil;
 import openfl.utils.AssetType;
 import openfl.utils.Assets;
 import haxe.Json;
+import psych3d.ModelThing;
+import psych3d.ModelView;
 
 import backend.Song;
 import states.stages.objects.TankmenBG;
@@ -64,6 +66,9 @@ class Character extends FlxSprite
 
 	public var healthIcon:String = 'face';
 	public var animationsArray:Array<AnimArray> = [];
+	public var modelView:ModelView;
+	public var modelThing:ModelThing;
+	public var isModelCharacter:Bool = false;
 
 	public var positionArray:Array<Float> = [0, 0];
 	public var cameraPosition:Array<Float> = [0, 0];
@@ -89,7 +94,21 @@ class Character extends FlxSprite
 
 		animOffsets = new Map<String, Array<Dynamic>>();
 		this.isPlayer = isPlayer;
-		changeCharacter(character);
+		if (character == 'prisma' || character == 'cube')
+		{
+			curCharacter = character;
+			isModelCharacter = true;
+			healthIcon = character;
+			healthColorArray = [161, 161, 161];
+			positionArray = [0, 0];
+			cameraPosition = [0, 0];
+			modelView = new ModelView();
+			modelThing = new ModelThing(character, modelView, (character == 'cube') ? 1.0 : 50.0);
+		}
+		else
+		{
+			changeCharacter(character);
+		}
 		
 		switch(curCharacter)
 		{
@@ -238,6 +257,11 @@ class Character extends FlxSprite
 
 	override function update(elapsed:Float)
 	{
+		if(isModelCharacter && modelView != null)
+		{
+			modelView.update();
+			frames = modelView.sprite.frames;
+		}
 		if(isAnimateAtlas) atlas.update(elapsed);
 
 		if(debugMode || (!isAnimateAtlas && animation.curAnim == null) || (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null)))
