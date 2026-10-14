@@ -1,0 +1,7 @@
+{
+  "name": "A Random Assortment of 3D Models",
+  "description": "Ported from doggy-dentures/random3dstuff (FPS Plus fork) into PsychEngine 1.0.4.",
+  "restart": false,
+  "runsGlobally": false,
+  "color": [120, 200, 80]
+}
