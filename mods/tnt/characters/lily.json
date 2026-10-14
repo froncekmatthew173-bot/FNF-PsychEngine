@@ -1,0 +1,15 @@
+{
+  "animations": [
+    { "anim":"idle", "name":"idle", "fps":24, "loop":true, "offsets":[0,0] }
+  ],
+  "no_antialiasing": false,
+  "image": "characters/BOYFRIEND",
+  "position": [0,0],
+  "healthicon": "lily",
+  "flip_x": false,
+  "healthbar_colors": [255,102,204],
+  "camera_position": [0,0],
+  "sing_duration": 6.1,
+  "scale": 1
+}
+
