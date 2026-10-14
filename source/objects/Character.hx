@@ -97,7 +97,7 @@ class Character extends FlxSprite
 
 		animOffsets = new Map<String, Array<Dynamic>>();
 		this.isPlayer = isPlayer;
-		var modelAllowed:Bool = (character == 'prisma' || character == 'cube' || character == 'betty');
+		var modelAllowed:Bool = (character == 'prisma' || character == 'cube' || character == 'betty' || character == 'monkey');
 		if ((Mods.currentModDirectory == '3d_senpai') && (character == 'senpai' || character == 'senpai-angry' || character == 'bf' || character == 'gf'))
 			modelAllowed = true;
 
