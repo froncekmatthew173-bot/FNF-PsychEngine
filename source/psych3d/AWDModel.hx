@@ -20,11 +20,13 @@ class AWDModel
 	public var fullyLoaded:Bool = false;
 	private var modelBytes:ByteArray;
 	private var modelMaterial:TextureMaterial;
+	private var modelScale:Float = 1;
 	public var currentAnim:String = "";
 
 	public function new(awdName:String, _view:ModelView, ?textureName:String = null, ?scale:Float = 1)
 	{
 		view = _view;
+		modelScale = scale;
 		if (textureName == null) textureName = awdName;
 		if (!Assets.exists('assets/models/' + awdName + '.awd'))
 		{
@@ -38,7 +40,7 @@ class AWDModel
 
 		if (Assets.exists('assets/models/' + textureName + '.png'))
 		{
-			modelMaterial = new TextureMaterial(away3d.utils.Cast.bitmapTexture('assets/models/'normally textureName + '.png'));
+			modelMaterial = new TextureMaterial(away3d.utils.Cast.bitmapTexture('assets/models/' + textureName + '.png'));
 			if (view != null)
 			{
 				modelMaterial.lightPicker = view.lightPicker;
@@ -52,9 +54,9 @@ class AWDModel
 		if (event.asset.assetType == Asset3DType.MESH)
 		{
 			mesh = cast(event.asset, Mesh);
-			mesh.scaleX = scale;
-			mesh.scaleY = scale;
-			mesh.scaleZ = scale;
+			mesh.scaleX = modelScale;
+			mesh.scaleY = modelScale;
+			mesh.scaleZ = modelScale;
 		}
 	}
 
