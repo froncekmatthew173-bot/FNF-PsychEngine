@@ -1,0 +1,8 @@
+{
+  "name": "Vs. Untextured Default Blender Cube",
+  "description": "Ported from doggy-dentures/vscube (FPS Plus fork, v1.2) into PsychEngine 1.0.4.",
+  "restart": false,
+  "runsGlobally": false,
+  "color": [0, 180, 255],
+  "iconFramerate": 10
+}
