@@ -1,0 +1,16 @@
+{
+  "song": {
+    "song": null,
+    "notes": [],
+    "events": null,
+    "bpm": 0.0,
+    "needsVoices": false,
+    "speed": 1.0,
+    "offset": 0.0,
+    "player1": "bf",
+    "player2": "dad",
+    "gfVersion": "gf",
+    "stage": "stage",
+    "format": "psych_v1"
+  }
+}

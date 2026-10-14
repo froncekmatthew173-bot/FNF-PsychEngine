@@ -1,0 +1,7 @@
+{
+  "name": "Thursday Night Throwdown (TNT)",
+  "description": "Ported from doggy-dentures/tnt (FPS Plus fork) into PsychEngine 1.0.4.",
+  "restart": false,
+  "runsGlobally": false,
+  "color": [255, 80, 80]
+}
