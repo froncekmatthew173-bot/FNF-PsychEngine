@@ -8,9 +8,11 @@ import flixel.util.FlxDestroyUtil;
 import openfl.utils.AssetType;
 import openfl.utils.Assets;
 import haxe.Json;
+import psych3d.AWDModel;
 import psych3d.ModelThing;
 import psych3d.ModelView;
 
+import backend.Mods;
 import backend.Song;
 import states.stages.objects.TankmenBG;
 
@@ -68,6 +70,7 @@ class Character extends FlxSprite
 	public var animationsArray:Array<AnimArray> = [];
 	public var modelView:ModelView;
 	public var modelThing:ModelThing;
+	public var awdModel:AWDModel;
 	public var isModelCharacter:Bool = false;
 
 	public var positionArray:Array<Float> = [0, 0];
@@ -94,7 +97,11 @@ class Character extends FlxSprite
 
 		animOffsets = new Map<String, Array<Dynamic>>();
 		this.isPlayer = isPlayer;
-		if (character == 'prisma' || character == 'cube' || character == 'betty')
+		var modelAllowed:Bool = (character == 'prisma' || character == 'cube' || character == 'betty');
+		if ((Mods.currentModDirectory == '3d_senpai') && (character == 'senpai' || character == 'senpai-angry' || character == 'bf' || character == 'gf'))
+			modelAllowed = true;
+
+		if (modelAllowed)
 		{
 			curCharacter = character;
 			isModelCharacter = true;
@@ -103,7 +110,10 @@ class Character extends FlxSprite
 			positionArray = [0, 0];
 			cameraPosition = [0, 0];
 			modelView = new ModelView();
-			modelThing = new ModelThing(character, modelView, (character == 'cube') ? 1.0 : 50.0);
+			if (Assets.exists('assets/models/' + character + '.md2'))
+				modelThing = new ModelThing(character, modelView, (character == 'cube') ? 1.0 : 50.0);
+			else
+				awdModel = new AWDModel(character, modelView, 1.0);
 		}
 		else
 		{
