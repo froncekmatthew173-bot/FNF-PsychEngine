@@ -94,7 +94,7 @@ class Character extends FlxSprite
 
 		animOffsets = new Map<String, Array<Dynamic>>();
 		this.isPlayer = isPlayer;
-		if (character == 'prisma' || character == 'cube')
+		if (character == 'prisma' || character == 'cube' || character == 'betty')
 		{
 			curCharacter = character;
 			isModelCharacter = true;
