@@ -1,0 +1,7 @@
+{
+  "name": "3D Senpai",
+  "description": "Ported from doggy-dentures/3dsenpai (FPS Plus fork) into PsychEngine 1.0.4.",
+  "restart": false,
+  "runsGlobally": false,
+  "color": [255, 120, 80]
+}
